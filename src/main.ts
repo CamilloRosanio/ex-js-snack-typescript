@@ -23,12 +23,14 @@ if (typeof dato === 'string') {
 }
 
 
-// SNACK 2
+// SNACK 2 + SNACK 2 BONUS
 
 type Dipendente = {
   nome: string,
   cognome: string,
   annoNascita: number,
   sesso: 'm' | 'f',
-  anniDiServizio: number[]
+  anniDiServizio: number[],
+  readonly emailAziendale: string,
+  contratto: 'indeterminato' | 'determinato' | 'freelance',
 }
